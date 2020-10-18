@@ -29,7 +29,7 @@ class Stack{
     void push(float);
     void pop();
     Element get_element();
-    float get_value();
+    float get_content();
     bool is_empty();
     int get_length();
 };
@@ -41,7 +41,12 @@ class Queue{
 
     void append(Element);
     void append(float);
-
+    bool is_empty();
+    Element get_first_element();
+    Element get_last_element();
+    float get_first_content();
+    float get_last_content();
+    void pop();
 };
 
 class Dict{
